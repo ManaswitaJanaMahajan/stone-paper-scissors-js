@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body{
+    background-color: #081b31;
+}
+h1{
+  color: #fff;
+  background-color: brown;
+  height: 5rem;
+  line-height: 5rem;
+}
+i{
+  padding:0.7rem;  
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+i:hover {
+    border-color:whitesmoke;
+}
+.Choice{
+  height: 165px;
+  width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.3rem solid transparent;
+  border-radius: 50%;
+}
+.Choice:hover{
+  cursor: pointer;
+  border-color:brown;
+}
+img{
+  height: 150px;
+  width: 150px;
+  /*background-size: cover;*/
+  object-fit: cover;
+  border-radius: 50%;
+}
+.Choices{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.ScoreBoard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+.Score{
+    color:whitesmoke;
+}
+.MsgCon{
+  margin-top: 3rem;
+}
+#msg {
+  color: #fff;
+  font-size: 1.25rem;
+  display: inline;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+#rst-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: brown;
+    color: azure;
+    border: 0.1rem solid whitesmoke;
+    border-radius: 1rem;
+    cursor: pointer;
+}
