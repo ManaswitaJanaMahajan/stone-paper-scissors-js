@@ -1,10 +1,13 @@
 let Choices = document.querySelectorAll(".Choice");
+
 let User_Score = 0;
 let Com_Score = 0;
 let UserScore = document.querySelector("#user-score");
 let ComScore = document.querySelector("#com-score");
 
 const Msg = document.querySelector("#msg");
+const ChoiceInfo = document.querySelector("#choice-info");
+
 const Reset = document.querySelector("#rst-btn");
 
 Choices.forEach((Choice) => {
@@ -25,6 +28,7 @@ const Game = (User_choice) => {
     const Com_pick = Com_choice();
     console.log("User choice:",User_choice);
     console.log("Computer choice:",Com_pick);
+    ChoiceInfo.innerText = `You: ${User_choice}  |  Computer: ${Com_pick}`;
 
     if(User_choice === Com_pick){
         console.log("It's a draw.");
@@ -70,5 +74,6 @@ Reset.addEventListener("click", () => {
     ComScore.innerText = 0;
     Msg.innerText = "Play Your Move";
     Msg.style.backgroundColor = "transparent";
+    ChoiceInfo.innerText = "";
 });
 
